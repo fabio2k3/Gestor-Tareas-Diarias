@@ -1,10 +1,10 @@
-body{
+body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #e0e0e0;
 }
 
-header{
+header {
     background-color: #4c1a2b;
     color: white;
     font-size: 36px;
@@ -16,33 +16,44 @@ header{
     margin-top: 20px;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     padding: 20px;
 }
 
-.left{
+.left {
     background-color: #5e2d3f;
     color: white;
     padding: 15px 20px;
     border-radius: 10px;
-    font-size: 24px;
-    width: fit-content;
+    font-size: 32px;
+    font-weight: bold;
+    width: fit-content;  
+    align-self: flex-start;
 }
 
-.right{
+.empty {
+    flex-grow: 1;  
+}
+
+.right {
     display: flex;
     flex-direction: column;
-    gap:10px
+    gap: 120px;
+    align-self: flex-start;
+    margin-left: -50px;
 }
 
-.task-status{
+.task-status {
     background-color: #5e2d3f;
     color: white;
     padding: 15px 20px;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 32px;
+    font-weight: bold;
     width: fit-content;
-    text-align: right;
+    text-align: center;
+    text-transform: uppercase;
 }
